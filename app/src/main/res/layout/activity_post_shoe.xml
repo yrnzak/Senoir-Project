@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/jordan_banner_2"
+    tools:context=".PostShoeActivity">
+
+    <!-- ScrollView to allow scrolling -->
+<ScrollView
+android:id="@+id/scrollView"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent">
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Shoe Name -->
+    <EditText
+        android:id="@+id/etShoeName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Shoe Name"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Shoe Price -->
+    <EditText
+        android:id="@+id/etShoePrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Shoe Quantity -->
+    <EditText
+        android:id="@+id/etShoeQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
+
+    <!-- Button to Select Image -->
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select Image"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@android:color/white" />
+
+    <!-- ImageView to Show Selected Image -->
+    <ImageView
+        android:id="@+id/ivSelectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_background"
+        android:visibility="gone" />
+
+    <!-- Button to Post Shoe -->
+    <Button
+        android:id="@+id/btnPostShoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Post Shoe"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+</ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

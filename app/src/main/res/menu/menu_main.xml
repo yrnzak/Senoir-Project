@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/person_24px"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_view_message"
+        android:title="Received Messages"
+        android:icon="@drawable/outgoing_mail_24px"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sent_message"
+        android:title="sent Messages"
+        android:icon="@drawable/mail_24px"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/logout_24px"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/home_24px"
+        app:showAsAction="ifRoom" />
+
+    <!-- In res/menu/menu_main.xml -->
+    <item
+        android:id="@+id/action_send_message"
+        android:title="Send Message"
+        android:icon="@drawable/chat_24px"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

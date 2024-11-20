@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "428683286306",
+    "project_id": "jordanapp-de18e",
+    "storage_bucket": "jordanapp-de18e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428683286306:android:3d02bfa81b814b449a377b",
+        "android_client_info": {
+          "package_name": "com.org.jordanapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8yJa2OdB5KtnkOejC3HZwG7YWMtETGOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Shoe Image -->
+    <ImageView
+        android:id="@+id/imgShoe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_image_place_holder_background" /> <!-- Replace with placeholder image -->
+
+    <!-- Shoe Name -->
+    <TextView
+        android:id="@+id/tvShoeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgShoe"
+        android:layout_marginStart="16dp"
+        android:text="Shoe Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Shoe Price -->
+    <TextView
+        android:id="@+id/tvShoePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgShoe"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/tvShoeName"
+        android:text="Price: $100"
+        android:textSize="14sp" />
+
+    <!-- Shoe Quantity -->
+    <TextView
+        android:id="@+id/tvShoeQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgShoe"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/tvShoePrice"
+        android:text="Available: 10"
+        android:textSize="14sp" />
+
+</RelativeLayout>

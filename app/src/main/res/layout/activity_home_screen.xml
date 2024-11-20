@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeScreen">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jordan_banner"
+         android:alpha="0.7" />
+
+
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/search_24px"
+        android:elevation="4dp"
+        android:hint="Search shoes..."
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#E0E0E0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ListView
+        android:id="@+id/lvShoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <!-- Floating Action Button Group (using a Floating Action Menu) -->
+
+
+        <!-- Floating Action Button for Post -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/post"
+            android:src="@drawable/sell_24px"
+            android:tint="@android:color/white"
+            android:elevation="8dp"
+            android:backgroundTint="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp" />
+
+        <!-- Floating Action Button for Community Forum -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabForum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/forum"
+            android:src="@drawable/comment_24px"
+            android:tint="@android:color/white"
+            android:elevation="8dp"
+            android:backgroundTint="#FF0000"
+            app:layout_constraintBottom_toTopOf="@id/fabPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"  />
+
+        <!-- Floating Action Button for Cart -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cart"
+            android:src="@drawable/shopping_cart_24px"
+            android:tint="@android:color/white"
+            android:elevation="8dp"
+            android:backgroundTint="#FF0000"
+            app:layout_constraintBottom_toTopOf="@id/fabForum"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

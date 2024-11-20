@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">JordanApp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="str_login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="have_no_account_txt">Don\'t have an account? Sign up here</string>
+    <string name="app_logo">App Logo</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="view_cart">View Cart</string>
+    <string name="cart">Cart</string>
+    <string name="message">Message</string>
+    <string name="post">sell shoes</string>
+    <string name="forum">Forum</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="home">Home</string>
+    <string name="user_profile_picture">User Profile Picture</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+</resources>

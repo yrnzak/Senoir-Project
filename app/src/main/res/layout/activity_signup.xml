@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignupActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jordan_banner"
+        android:alpha="0.6" />
+
+    <!-- Floating Sign Up Form -->
+    <LinearLayout
+        android:id="@+id/sign_up_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="24dp">
+
+        <!-- Full Name Field -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:drawablePadding="4dp"
+            android:hint="First Name"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+
+        <!-- Full Name Field -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:drawablePadding="16dp"
+            android:hint="Last Name"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:hint="Phone Number"
+            android:inputType="textPhonetic"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+        <!-- Confirm Password Field -->
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:drawablePadding="8dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_700" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Already have an account? Login here"
+            android:textAlignment="center"
+            android:textColor="#0000FF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
